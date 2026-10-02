@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071c27">
+  <meta name="description" content="Pocket Planet privacy policy: learn how game saves, Google Play purchases, and future advertising and analytics services are handled.">
+  <title>Privacy Policy | Pocket Planet</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --page: #f3f6f1;
+      --surface: #fffefa;
+      --ink: #18323a;
+      --muted: #5d7478;
+      --line: #dbe6de;
+      --link: #176d63;
+      --mint: #bce7b2;
+      --gold: #f2c478;
+      --shadow: 0 18px 48px rgba(14, 42, 45, .07);
+    }
+    :root[data-theme="dark"] {
+      color-scheme: dark;
+      --page: #091820;
+      --surface: #102630;
+      --ink: #edf4ec;
+      --muted: #a9c2c2;
+      --line: #29444a;
+      --link: #9de4c9;
+      --mint: #94d89e;
+      --gold: #e5b86f;
+      --shadow: 0 18px 48px rgba(0, 0, 0, .18);
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--page); color: var(--ink); font: 16px/1.7 system-ui, -apple-system, "Segoe UI", sans-serif; }
+    a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:hover { text-decoration-thickness: 2px; }
+    :focus-visible { outline: 3px solid #e5a74e; outline-offset: 4px; border-radius: 3px; }
+    .skip { position: absolute; left: 16px; top: -100px; z-index: 100; padding: 10px 16px; background: #fff; color: #173239; }
+    .skip:focus { top: 12px; }
+    .progress { position: fixed; inset: 0 auto auto 0; width: 0; height: 3px; z-index: 80; background: #aee7ae; }
+    .topbar { position: sticky; top: 0; z-index: 50; border-bottom: 1px solid var(--line); background: var(--surface); }
+    .topbar-inner { max-width: 1180px; min-height: 70px; margin: auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+    .brand { display: inline-flex; align-items: center; gap: 12px; color: var(--ink); font-size: 14px; font-weight: 800; letter-spacing: .17em; text-decoration: none; white-space: nowrap; }
+    .brand svg { flex: 0 0 auto; }
+    .top-actions { display: flex; gap: 9px; align-items: center; }
+    .small-btn { border: 1px solid var(--line); background: transparent; color: var(--ink); border-radius: 999px; padding: 7px 14px; font: inherit; font-size: 13px; font-weight: 650; text-decoration: none; cursor: pointer; white-space: nowrap; }
+    .small-btn:hover { background: var(--page); }
+    .hero { background: #071c27; color: #f7fbf2; overflow: hidden; position: relative; }
+    .hero::before { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .34; background: radial-gradient(circle at 78% 25%, #1c7885 0, transparent 34%), radial-gradient(circle at 16% 87%, #214b41 0, transparent 33%); }
+    .hero-inner { position: relative; max-width: 1180px; min-height: 385px; margin: auto; padding: 76px 24px 66px; display: grid; grid-template-columns: minmax(0, 1fr) 280px; align-items: center; gap: 46px; }
+    .eyebrow { margin: 0 0 18px; color: #afe5b2; font-size: 12px; font-weight: 800; letter-spacing: .24em; text-transform: uppercase; }
+    h1 { font-size: clamp(44px, 6vw, 76px); line-height: 1.08; letter-spacing: -.055em; margin: 0 0 20px; }
+    .hero-desc { max-width: 610px; margin: 0; color: #c0d9d4; font-size: clamp(17px, 2vw, 20px); line-height: 1.55; }
+    .hero-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 22px; margin-top: 30px; color: #b8d1cd; font-size: 14px; }
+    .hero-meta span + span::before { content: "•"; margin-right: 20px; color: #8fd6ad; }
+    .hero-art { width: 280px; height: 280px; filter: drop-shadow(0 30px 35px rgba(0,0,0,.25)); }
+    .wrap { max-width: 1180px; margin: auto; padding: 0 24px; }
+    .overview { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: -30px auto 58px; position: relative; }
+    .overview-card { background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow); border-radius: 18px; padding: 22px 24px 20px; min-height: 135px; }
+    .overview-card .number { display: inline-block; margin-bottom: 8px; color: var(--link); font-size: 12px; font-weight: 800; letter-spacing: .13em; }
+    .overview-card strong { display: block; font-size: 18px; line-height: 1.3; }
+    .overview-card p { margin: 6px 0 0; color: var(--muted); font-size: 14px; line-height: 1.5; }
+    .content { display: grid; grid-template-columns: 225px minmax(0, 1fr); gap: 62px; padding-bottom: 90px; }
+    .toc { align-self: start; position: sticky; top: 103px; padding: 7px 0 20px; }
+    .toc-title { display: block; margin: 0 0 14px 12px; color: var(--muted); font-size: 11px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+    .toc a { display: block; border-left: 2px solid transparent; padding: 8px 12px; color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; line-height: 1.35; }
+    .toc a:hover, .toc a[aria-current="true"] { color: var(--link); border-color: var(--mint); background: color-mix(in srgb, var(--mint) 11%, transparent); }
+    .policy { max-width: 780px; }
+    .intro { margin: 0 0 42px; font-size: 18px; line-height: 1.7; }
+    .section { padding: 30px 0 34px; border-top: 1px solid var(--line); scroll-margin-top: 92px; }
+    .section-head { display: flex; align-items: baseline; gap: 15px; margin-bottom: 14px; }
+    .section-head .index { color: var(--link); font-size: 12px; font-weight: 800; letter-spacing: .12em; white-space: nowrap; }
+    h2 { margin: 0; font-size: clamp(23px, 2.8vw, 30px); line-height: 1.25; letter-spacing: -.025em; }
+    h3 { margin: 24px 0 8px; font-size: 18px; line-height: 1.4; }
+    .section p { margin: 0 0 14px; color: var(--muted); }
+    .section p:last-child { margin-bottom: 0; }
+    .section ul { padding-left: 22px; margin: 0 0 14px; color: var(--muted); }
+    .section li { padding-left: 3px; margin: 5px 0; }
+    .section strong { color: var(--ink); }
+    .future-note { margin: 20px 0 24px; border-left: 4px solid var(--gold); background: color-mix(in srgb, var(--gold) 13%, var(--surface)); border-radius: 0 12px 12px 0; padding: 15px 18px; color: var(--ink); }
+    .future-note strong { display: block; margin-bottom: 3px; }
+    .future-note p { margin: 0; color: var(--muted); }
+    .contact-card { margin-top: 22px; border: 1px solid var(--line); background: var(--surface); border-radius: 18px; padding: 22px 24px; }
+    .contact-card span { display: block; color: var(--muted); font-size: 12px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    .contact-card a { display: inline-block; margin-top: 5px; font-size: clamp(17px, 3vw, 22px); font-weight: 750; overflow-wrap: anywhere; }
+    .footer { background: #071c27; color: #adc8c2; }
+    .footer-inner { max-width: 1180px; margin: auto; padding: 30px 24px; display: flex; align-items: center; justify-content: space-between; gap: 18px; font-size: 13px; }
+    .footer a { color: #b6e8b7; }
+    @media (max-width: 760px) {
+      .hero-inner { grid-template-columns: 1fr; min-height: 0; padding: 58px 22px 82px; }
+      .hero-art { display: none; }
+      .hero-meta { display: block; }
+      .hero-meta span { display: block; }
+      .hero-meta span + span::before { display: none; }
+      .overview { grid-template-columns: 1fr; gap: 10px; margin-top: -38px; margin-bottom: 40px; }
+      .overview-card { min-height: 0; padding: 17px 19px; }
+      .content { display: block; padding-bottom: 60px; }
+      .toc { position: static; display: flex; overflow-x: auto; padding: 0 0 20px; margin-bottom: 20px; border-bottom: 1px solid var(--line); gap: 4px; }
+      .toc-title { display: none; }
+      .toc a { flex: 0 0 auto; border-left: 0; border-bottom: 2px solid transparent; padding: 8px 10px; white-space: nowrap; }
+      .toc a:hover, .toc a[aria-current="true"] { border-bottom-color: var(--mint); }
+      .topbar-inner { padding: 0 18px; }
+      .brand { font-size: 11px; letter-spacing: .12em; gap: 7px; }
+      .brand svg { width: 25px; height: 25px; }
+      .top-actions .small-btn { padding: 6px 10px; font-size: 12px; }
+      .top-actions .print { display: none; }
+      .footer-inner { display: block; }
+      .footer-inner span { display: block; margin-top: 8px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    @media print {
+      :root { color-scheme: light; --page: #fff; --surface: #fff; --ink: #111; --muted: #333; --line: #ccc; --link: #111; }
+      .topbar, .progress, .toc, .hero-art, .footer, .overview { display: none !important; }
+      .hero { background: #fff; color: #111; }
+      .hero::before { display: none; }
+      .hero-inner { min-height: 0; display: block; padding: 0 0 24px; }
+      .hero-desc, .hero-meta, .eyebrow { color: #333; }
+      .wrap { padding: 0; }
+      .content { display: block; padding: 0; }
+      .section { break-inside: avoid; }
+      a { color: #111; }
+      body { font-size: 11pt; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to privacy policy</a>
+  <div class="progress" aria-hidden="true" id="reading-progress"></div>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#top" aria-label="Pocket Planet, back to top">
+        <svg width="31" height="31" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="18" fill="#0c3544"/>
+          <path d="M20 2A18 18 0 0 0 20 38Z" fill="#d8a65c"/>
+          <path d="M20 2A18 18 0 0 1 20 38Z" fill="#53cdbf"/>
+          <path d="M20 8c7 0 8 6 14 7l-2 8-8-3-4 4Z" fill="#aee3a3"/>
+          <circle cx="20" cy="20" r="18" fill="none" stroke="#dcf3dc" stroke-width="1.5"/>
+        </svg>
+        POCKET PLANET
+      </a>
+      <div class="top-actions">
+        <button type="button" class="small-btn" id="theme-toggle" aria-pressed="false">Dark mode</button>
+        <button type="button" class="small-btn print" id="print-button">Print</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="page-title">
+      <div class="hero-inner">
+        <div>
+          <p class="eyebrow">Pocket Planet / Player privacy</p>
+          <h1 id="page-title">Privacy Policy</h1>
+          <p class="hero-desc">A clear look at what stays on your device, how Premium purchases work, and how we will explain any future advertising or analytics.</p>
+          <div class="hero-meta">
+            <span>Effective <time datetime="2026-10-02">2 October 2026</time></span>
+            <span>Applies to Pocket Planet for Android</span>
+          </div>
+        </div>
+        <svg class="hero-art" viewBox="0 0 280 280" role="img" aria-label="Illustration of a planet changing from barren land to a living world">
+          <defs>
+            <clipPath id="planet-clip"><circle cx="140" cy="140" r="105"/></clipPath>
+            <linearGradient id="water" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#164c63"/><stop offset="1" stop-color="#4cc4c3"/></linearGradient>
+          </defs>
+          <circle cx="140" cy="140" r="125" fill="none" stroke="#3a7279" stroke-width="1.5" opacity=".75"/>
+          <circle cx="140" cy="140" r="105" fill="url(#water)"/>
+          <g clip-path="url(#planet-clip)">
+            <path d="M137 28C97 35 60 61 40 105l12 37 29-15 20 19-12 40 29 28 26 36 6-222Z" fill="#c99558"/>
+            <path d="M139 29c53 0 90 27 110 64l-30 14-26-12-24 29 18 23-26 24 8 52-28 18Z" fill="#a9db9e"/>
+            <path d="M166 66l30-20 19 25-23 16-19-6Zm36 104 28-7 26 21-13 28-30-12Z" fill="#3c9773"/>
+            <path d="M61 80l25-20 22 17-8 24-27-5Zm19 90 28-6 10 29-20 9Z" fill="#e8b670"/>
+            <path d="M140 35v211" fill="none" stroke="#f1e3bd" stroke-width="2" opacity=".6"/>
+          </g>
+          <circle cx="140" cy="140" r="105" fill="none" stroke="#b3e8d8" stroke-width="2"/>
+          <circle cx="248" cy="59" r="3" fill="#b9eed2"/><circle cx="45" cy="215" r="2" fill="#b9eed2"/>
+        </svg>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <div class="overview" aria-label="Privacy at a glance">
+        <div class="overview-card"><span class="number">01 / LOCAL</span><strong>Your worlds stay on your device</strong><p>Game progress is saved locally. No Pocket Planet account is required.</p></div>
+        <div class="overview-card"><span class="number">02 / PREMIUM</span><strong>Purchases use Google Play</strong><p>Google processes payments; the game checks purchase ownership.</p></div>
+        <div class="overview-card"><span class="number">03 / FUTURE</span><strong>Changes will be disclosed</strong><p>AdMob and Firebase Analytics are planned, but are not active in this release.</p></div>
+      </div>
+
+      <div class="content">
+        <nav class="toc" aria-label="Policy sections">
+          <span class="toc-title">On this page</span>
+          <a href="#about">About this policy</a>
+          <a href="#progress">Game progress</a>
+          <a href="#premium">Premium purchases</a>
+          <a href="#future">Future ads &amp; analytics</a>
+          <a href="#sharing">Sharing &amp; security</a>
+          <a href="#choices">Retention &amp; choices</a>
+          <a href="#families">Families</a>
+          <a href="#contact">Contact &amp; changes</a>
+        </nav>
+
+        <article class="policy">
+          <p class="intro">Pocket Planet is a planet-restoration game. This policy explains what information the current game stores, which services handle purchases, and what we plan to disclose before future services are enabled. For privacy questions, email <a href="mailto:support@quickfilelab.com">support@quickfilelab.com</a>.</p>
+
+          <section class="section" id="about" aria-labelledby="about-title">
+            <div class="section-head"><span class="index">01</span><h2 id="about-title">About this policy</h2></div>
+            <p>This policy applies to the Pocket Planet Android app, package name <strong>com.quickfilelab.pocketplanet</strong>. It covers game progress, Premium purchases, and the services described below. The app does not require you to create a Pocket Planet account.</p>
+          </section>
+
+          <section class="section" id="progress" aria-labelledby="progress-title">
+            <div class="section-head"><span class="index">02</span><h2 id="progress-title">Game progress on your device</h2></div>
+            <p>Pocket Planet saves your planet progress, placed objects, resources, missions, and settings in the app's storage on your device. We do not operate a cloud-save server for this data, and the game does not send your saved world to a server operated by us.</p>
+            <p>Clearing the app's storage or uninstalling the game may erase this local progress. If your device or platform backs up app data, those backups are controlled by the relevant device or platform settings.</p>
+          </section>
+
+          <section class="section" id="premium" aria-labelledby="premium-title">
+            <div class="section-head"><span class="index">03</span><h2 id="premium-title">Premium purchases</h2></div>
+            <p>Pocket Planet offers an optional one-time Premium unlock. If you choose to buy it, <strong>Google Play processes the payment</strong>. The game checks Google Play for purchase ownership and uses that result to unlock Premium features. We do not receive or store your payment card details.</p>
+            <p>The Premium screen includes <strong>Restore purchases</strong>, which asks Google Play to check ownership again. If Google Play reports that a purchase was refunded or revoked, Premium access is removed when the game next checks ownership. Google Play handles its purchase records under <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google's Privacy Policy</a>.</p>
+          </section>
+
+          <section class="section" id="future" aria-labelledby="future-title">
+            <div class="section-head"><span class="index">04</span><h2 id="future-title">Future advertising and analytics</h2></div>
+            <div class="future-note"><strong>Status for this release: not active</strong><p>This version does not display ads or use AdMob or Firebase Analytics. The information below describes planned services, not data collection taking place in this version.</p></div>
+            <h3>Planned Google AdMob advertising</h3>
+            <p>In a future update, we may show ads through Google AdMob. Depending on the SDK version, settings, region, and your choices, Google's ads technology may process an IP address (which can indicate an approximate location), interactions such as app launches or ad views, diagnostic data, and device or advertising identifiers. Google uses this information for ad delivery, measurement, and fraud prevention. We will review the actual SDK configuration and update this policy and Play Console disclosures before enabling ads. See <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" rel="noopener noreferrer">Google Mobile Ads data disclosure</a>.</p>
+            <h3>Planned Firebase Analytics</h3>
+            <p>We may later use Google Analytics for Firebase to understand how the game is used and improve it. Depending on configuration, the SDK can collect an app-instance identifier, app lifecycle events such as sessions and screen views, approximate location derived from a masked IP address, advertising ID, and in-app purchase events. Any additional game events we choose to log will be described when implemented. We will update this policy and Play Console disclosures before enabling analytics. See <a href="https://support.google.com/analytics/answer/11582702" rel="noopener noreferrer">Google Analytics for Firebase data disclosure</a>.</p>
+            <p>Where applicable, we will provide the required privacy or consent choices before using future advertising features. The details will depend on the services and settings actually released.</p>
+          </section>
+
+          <section class="section" id="sharing" aria-labelledby="sharing-title">
+            <div class="section-head"><span class="index">05</span><h2 id="sharing-title">Sharing and security</h2></div>
+            <p>We do not sell your game progress or send it to our own server. Current purchase checks involve Google Play; Google handles payment information on its systems. Local progress stays in the app's storage on your device and is subject to your device's security settings. We do not hold payment card numbers.</p>
+            <p>If you email support, we receive the email address and message you choose to send so we can respond. Email is handled by the mail services used by you and by our support inbox. The planned AdMob and Firebase services described above will involve Google when they are actually enabled; their specific data practices will be reflected in a revised policy.</p>
+            <p>Pocket Planet does not request access to your contacts, precise location, camera, or microphone in this release.</p>
+          </section>
+
+          <section class="section" id="choices" aria-labelledby="choices-title">
+            <div class="section-head"><span class="index">06</span><h2 id="choices-title">Retention, deletion, and your choices</h2></div>
+            <ul>
+              <li><strong>Local game data:</strong> it remains on your device until you clear app storage or uninstall the game, subject to any device or platform backups you control.</li>
+              <li><strong>Premium purchase:</strong> use Restore purchases in the game to recheck ownership. Google Play retains its payment and purchase records under its own policies.</li>
+              <li><strong>Support messages:</strong> contact us at the address below if you want us to review or delete correspondence you sent, subject to any records we must keep for legal or operational reasons.</li>
+            </ul>
+            <p>There is no Pocket Planet account to delete in this version. If we add accounts or cloud saves later, this policy will explain their retention and deletion controls before release.</p>
+          </section>
+
+          <section class="section" id="families" aria-labelledby="families-title">
+            <div class="section-head"><span class="index">07</span><h2 id="families-title">Children and families</h2></div>
+            <p>Parents and guardians can supervise purchases using Google Play's purchase controls. A parent or guardian with a privacy question can contact us using the email below. If future ads or analytics are added, we will review the relevant age and consent requirements before enabling them.</p>
+          </section>
+
+          <section class="section" id="contact" aria-labelledby="contact-title">
+            <div class="section-head"><span class="index">08</span><h2 id="contact-title">Changes and contact</h2></div>
+            <p>We may revise this policy as Pocket Planet changes. When we do, we will update the effective date shown at the top of this page. Before activating AdMob, Firebase Analytics, accounts, or another service that changes data handling, we will update the details here to match the released app.</p>
+            <div class="contact-card"><span>Privacy and support contact</span><a href="mailto:support@quickfilelab.com">support@quickfilelab.com</a></div>
+          </section>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner"><span>© 2026 Pocket Planet. Privacy, explained clearly.</span><span>This page loads no external fonts, images, analytics, or scripts.</span></div>
+  </footer>
+
+  <script>
+    (function () {
+      "use strict";
+      var toggle = document.getElementById("theme-toggle");
+      var printButton = document.getElementById("print-button");
+      var bar = document.getElementById("reading-progress");
+      var links = Array.prototype.slice.call(document.querySelectorAll(".toc a"));
+      toggle.addEventListener("click", function () {
+        var dark = document.documentElement.getAttribute("data-theme") !== "dark";
+        document.documentElement.setAttribute("data-theme", dark ? "dark" : "light");
+        toggle.setAttribute("aria-pressed", String(dark));
+        toggle.textContent = dark ? "Light mode" : "Dark mode";
+      });
+      printButton.addEventListener("click", function () { window.print(); });
+      function updateProgress() {
+        var height = document.documentElement.scrollHeight - window.innerHeight;
+        bar.style.width = (height > 0 ? Math.min(100, Math.max(0, window.scrollY / height * 100)) : 0) + "%";
+      }
+      window.addEventListener("scroll", updateProgress, { passive: true });
+      window.addEventListener("resize", updateProgress);
+      updateProgress();
+      if ("IntersectionObserver" in window) {
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              links.forEach(function (link) {
+                if (link.getAttribute("href") === "#" + entry.target.id) link.setAttribute("aria-current", "true");
+                else link.removeAttribute("aria-current");
+              });
+            }
+          });
+        }, { rootMargin: "-100px 0px -65% 0px" });
+        document.querySelectorAll(".section").forEach(function (section) { observer.observe(section); });
+      }
+    }());
+  </script>
+</body>
+</html>
